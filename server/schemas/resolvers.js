@@ -24,6 +24,7 @@ const resolvers = {
       }
 
       const token = signToken(user);
+
       return { token, user };
     },
     addUser: async (parent, args) => {
